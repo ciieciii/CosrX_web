@@ -1,64 +1,201 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .bg-pink {
-    background-color: #f8bcbc;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .main-banner {
-    background-color: #fefefe;
-  }
-  
-  .main-banner h1 {
-    font-size: 3rem;
-    color: #333;
-  }
-  
-  .main-banner p {
-    font-size: 1.2rem;
-    color: #777;
-  }
-  
-  .products .card {
-    border: none;
-    transition: transform 0.2s;
-  }
-  
-  .products .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .about-cosrx p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: #555;
-  }
-  
-  footer {
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: #555;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  .container {
-    position: relative;
-    text-align: center;
-  }
-  .container .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: transparent;
+  margin: 0;
+  container: 70px;
+
+}
+
+.logo {
+  font-size: 30pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #320A3F;
+  font-family: "Poltawski Nowy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.text-start {
+  margin-top: 30px;
+}
+
+.menu {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+}
+
+.menu li {
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+  color: #060608;
+  text-decoration: none;
+  display: inline-block;
+}
+
+form {
+  width: 300px;
+  height: 44px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  background-color: #E5D9F2;
+  border-radius: 50px;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #121010;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #6d2121;
+  opacity: 0.7;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  text-decoration: #DFE1EE;
+
+}
+
+
+.container-form {
+  margin-top: -500px !important;
+  margin-left: 1100px !important;
+
+
+}
+
+
+.main-banner {
+  background-color: #fefefe;
+}
+
+
+
+.main-banner h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.main-banner p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.products .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.products .card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  background-color: #FFE1FF;
+}
+
+.product-card img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.product-card h5 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #7f2a7d;
+}
+
+.about-cosrx p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+footer {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.container-color-bg{
+  background-color: #f5dcd7;
+}
+.img-bg img{
+  width: 20%0;
+}
+
+.cos-txt h2 {
+  font-weight: bold;
+  text-decoration: none;
+  color: #320A3F;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.cos-txt p {
+color: #320A3F;
+}
+
+.img-fluid rounded{
+  position: relative;
+  bottom: 200px;
+}
