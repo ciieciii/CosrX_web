@@ -1,44 +1,89 @@
 body {
-    font-family: 'Arial', sans-serif;
-}
-
-.navbar-brand {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background: transparent;
+    margin: 0;
+    container: 70px;
+  
+  }
+  
+  .logo {
+    font-size: 30pt;
     font-weight: bold;
-    font-size: 24px;
-    
-}
-
-.product-title {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.price {
-    font-size: 24px;
-    color: #4b0082;
-    margin: 15px 0;
-}
-
-.product-img {
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.product-description {
-    margin-top: 20px;
-    line-height: 1.6;
-}
-
-.product-ingredients {
+    text-decoration: none;
+    color: #320A3F;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  .text-start {
+    margin-top: 30px;
+  }
+  
+  .menu {
+    margin: auto;
+    display: flex;
     list-style: none;
     padding: 0;
-}
-
-.product-ingredients li {
-    font-size: 16px;
-}
-
-.footer {
+  
+  }
+  
+  .menu li {
+    padding-left: 0;
+    margin-right: 10px;
+  }
+  
+  .menu li a {
+    padding: 10px;
+    color: #060608;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  form {
+    width: 300px;
+    height: 44px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: #E5D9F2;
+    border-radius: 50px;
+  }
+  
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #121010;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+  ::placeholder {
+    color: #6d2121;
+    opacity: 0.7;
+  }
+  
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    text-decoration: #fff7f7;
+  
+  }
+  
+  
+  .container-form {
+    /* margin-top: 40px ; */
+    margin-left: 1100px;
+  }
+  .footer {
     background-color: #f8f9fa;
+    margin-bottom: auto;
 }
-
