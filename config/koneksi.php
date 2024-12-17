@@ -1,5 +1,5 @@
 <?php 
-     $rootDir = $_SERVER['DOCUMENT_ROOT'].'/KATALOG/';
+     $rootDir = $_SERVER['DOCUMENT_ROOT'].'/cosrx_ecii/';
     $server = "localhost"; // nama server
     $user = "root";
     $pass = '';

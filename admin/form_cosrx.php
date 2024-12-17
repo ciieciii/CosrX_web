@@ -18,23 +18,27 @@ require '../config/config.php';
             <h2>Input Data Product </h2>
                 <form method="post" action="" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="namaProduct" class="form-label">Name Produk</label>
+                    <div class="mb-3">
+                        <label for="kode_product" class="form-label">kode</label>
+                        <input type="number" class="form-control" name="harga" >
+                    </div>
+                        <label for="nama_product" class="form-label">NamaProduk</label>
                         <input type="text" class="form-control" name="namaProduct" >
                     </div>
                     <div class="mb-3">
-                        <label for="jenis" class="form-label">Jenis</label>
+                        <label for="kode_kategori" class="form-label">kodekategori</label>
                         <select class="form-select" name="jenis">
                                 <option selected value="0" >--Pilih Jenis--</option>
                                 <option value="1">ACNE</option>
                                 <option value="2">BRIGHTENNING</option>
                         </select>
                     <div class="mb-3">
-                        <label for="deskProduct">Deskripsi</label>
+                        <label for="desk">Deskripsi</label>
                         <textarea name="description" class="form-control" placeholder="Leave a description here" id="" for="desk"></textarea>
                     </div>
                     <div >
                     <div class="mb-3">
-                        <label for="hargaProduct" class="form-label">Harga</label>
+                        <label for="harga_product" class="form-label">Harga</label>
                         <input type="number" class="form-control" name="harga" >
                     </div>
                     </div>

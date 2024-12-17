@@ -13,15 +13,14 @@ function validasiData($data){
 
 function inputdata($data, $koneksi) {
     // Ambil data dari array
-    $kodeproduct = $data['kodeproduct'];
-    $namaProduct = $data['namaProduct'];
-    $jenis = $data['jenis'];
-    $description = $data['desk'];
-    $hargaProduct = $data['harga'];
-    $filename = $data['image']; // Perbaiki penulisan dari $filenmae ke $filename
+    $nama_product = $_POST['namaProduct'];
+    $harga_product = $data['harga'];
+    $kode_kategori = $data['jenis'];
+    $desk = $data['description'];
+    $filename = $data['gambar']; // Perbaiki penulisan dari $filenmae ke $filename
 
     // Query SQL untuk memasukkan data
-    $sql = "INSERT INTO tb_menu (kodeproduct, nama_product, jenis, desk, harga, gambar) 
+    $sql = "INSERT INTO tb_menu (kode_product, nama_product, harga_product, kode_kategori, desk, gambar) 
             VALUES (?,?, ?, ?, ?, ?)";
     $stmt = mysqli_prepare($koneksi, $sql);
 
@@ -30,7 +29,7 @@ function inputdata($data, $koneksi) {
     }
 
     // Bind parameter
-    mysqli_stmt_bind_param($stmt, 'ssiiss',$kodeproduct, $namaProduct, $jenis, $description, $hargaProduct, $filename);
+    mysqli_stmt_bind_param($stmt, 'isiiss',$kode_product, $nama_product, $harga_product, $kode_kategori, $desk, $filename);
     
     // Eksekusi pernyataan
     $result = mysqli_stmt_execute($stmt);
@@ -46,9 +45,8 @@ function inputdata($data, $koneksi) {
 
 function viewProduct ($koneksi){
 
-    $sql = "SELECT tb_produk.*, tb_produk.nama_produk as namaProduk, tb_produk.id_produk FROM tb_produk 
-                    LEFT JOIN tb_kategori ON tb_produk.id_kategori = tb_kategori.id_kategori";
-
+    $sql = "SELECT tb_menu.nama_product, tb_menu.harga_product, tb_menu.kode_kategori, tb_menu.desk, tb_menu.gambar FROM tb_menu
+                    LEFT JOIN tb_kategori ON tb_kategori.kode_kategori = tb_kategori.kode_kategori";
     $stmt = mysqli_query($koneksi,$sql);
 
     if(mysqli_num_rows($stmt) > 0 ) return mysqli_fetch_all($stmt, MYSQLI_ASSOC);
